@@ -30,7 +30,7 @@
                     </div>
                 </form>
                 <div class="col-3 m-2">
-                    <button class="btn btn-dark " onclick="location.href='index.html'">Back</button>
+                    <button class="btn btn-dark " onclick="redrct();">Back</button>
                 </div>
                 <div class="col-3 m-2 text-center">
                     <button class="m-3 btn btn-dark" onclick="display('sectionEncrpt')">Submit</button>
@@ -39,6 +39,14 @@
         </div>
     </div>
 </div>
+    <script>
+        function redrct()
+        {
+            var lnk='localhost:7071/api/HttpExample?name=encryptOP&size='+document.getElementById("inputCity").value;
+            window.location.href=lnk;
+        }
+     </srcipt>
+    
 <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
 </body>
 </html>
