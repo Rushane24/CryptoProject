@@ -30,7 +30,7 @@
                     </div>
                 </form>
                 <div class="col-3 m-2">
-                    <button class="btn btn-dark " onclick="redrct();">Back</button>
+                    <button class="btn btn-dark " onclick="location.href='https://aes256crypto.azurewebsites.net/api/HttpExample?name=index'">Back</button>
                 </div>
                 <div class="col-3 m-2 text-center">
                     <button class="m-3 btn btn-dark" onclick="redrct();">Submit</button>
@@ -42,7 +42,7 @@
     <script>
         function redrct()
         {
-            var lnk='http://localhost:7071/api/HttpExample?name=encryptOP&size='+document.getElementById("inputCity").value;
+            var lnk='https://aes256crypto.azurewebsites.net/api/HttpExample?name=encryptOP&size='+document.getElementById("inputCity").value;
             window.location.href=lnk;
         }
      </script>
