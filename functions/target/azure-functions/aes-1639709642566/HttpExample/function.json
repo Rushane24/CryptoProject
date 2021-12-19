@@ -1,0 +1,15 @@
+{
+  "scriptFile" : "../aes-1.0.jar",
+  "entryPoint" : "com.crypto.Function.run",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "req",
+    "methods" : [ "GET", "POST" ],
+    "authLevel" : "ANONYMOUS"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}
