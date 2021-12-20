@@ -124,7 +124,7 @@ public class Function {
             while ((ln = br.readLine()) != null) {
                 k += ln + "\n";
             }
-            // System.out.println(k);
+            k = k.replace("crytography.css", repo + "crytography.css");
             return k;
         } catch (Exception excep) {
             return "Page render error";
